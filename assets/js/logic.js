@@ -65,3 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+
+
+// To remove all blog posts:
+
+
+    
+

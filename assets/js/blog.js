@@ -20,7 +20,10 @@ function loadBlogPosts() {
 // Load blog posts when the page is loaded
 window.onload = loadBlogPosts;
 
-// Back button logic
+// Back 
+logic
 document.querySelector('#back-to-form').addEventListener('click', function () {
     window.location.href = 'index.html'; // Redirect to the form page
 });
+
+// To remove all blog posts:

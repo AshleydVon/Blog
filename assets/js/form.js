@@ -25,6 +25,5 @@ blogForm.addEventListener('submit', function(event) {
 
     localStorage.setItem('blogPosts', JSON.stringify(blogPosts)); // Save to local storage
 
-    // Redirect to another page or update the UI (optional)
-    console.log("Form submitted and data saved");
+    // Redirect to another page or update the UI (optional) console.log("Form submitted and data saved");
 });

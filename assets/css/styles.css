@@ -3,104 +3,84 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Dancing Script', cursive; /* Apply Google script font */
 }
 
-
-/* Background image with additional styling */
+/* Light Mode */
 body.light-mode {
-    background-image: url('assets/images/background.jpg'); /* Path to your image */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repetition */
-    color: #333; /* Text color */
+  font-family: 'Dancing Script', cursive; 
+  background: linear-gradient(to top, rgb(212, 124, 237), rgb(167, 164, 234)); /* Gradient for light mode */
+  color: #333; /* Dark text for light mode */
+  min-height: 100vh; /* Ensure gradient covers the full viewport */
 }
 
-/* Dark mode example */
+/* Dark Mode */
 body.dark-mode {
-    background-image: url('assets/images/dark-background.jpg'); /* Different image for dark mode */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white; /* Text color in dark mode */
+  font-family: 'Dancing Script', cursive; 
+  background: linear-gradient(to bottom, #47065d, #1c1c3c); /* Dark gradient */
+  color: #fff; /* Light text for dark mode */
 }
 
-/* Other styles for larger appearance */
-body {
-    padding: 40px; /* Adds padding around the content */
-    margin: 40px; /* Adds margin for larger appearance */
+/* Label color adjustment for dark mode */
+label {
+  color: inherit; /* Ensures text inherits the correct color from the body mode */
 }
 
-
-/* Light and dark modes with gradient background */
-body.light-mode {
-  background: linear-gradient(to bottom, teal, pink); /* Teal to pink gradient */
-  color: #333; /* Dark text for contrast */
+/* Button Styles */
+button {
+  background: blueviolet; 
+  color: white; 
+  border: none; 
+  padding: 15px 30px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  transition: background 0.3s;
+  font-size: 1.2em; /* Default font size for buttons */
 }
 
-body.dark-mode {
-  background: linear-gradient(to bottom, darkslategray, darkmagenta); /* Darker gradient */
-  color: white; /* Light text for contrast */
+/* Hover styling for buttons */
+button:hover {
+  background: teal; /* Change hover color to teal */
 }
 
-/* Margin and padding adjustments for a larger appearance */
-body {
-  padding: 40px;
-  margin: 40px;
-}
-
-/* Styling for input fields (text, email, and textarea) */
-input,
-textarea {
-  font-size: 3em; /* Slightly larger font for readability */
-  padding: 10px; /* Padding for user comfort */
-  border: 1px solid #ccc; /* Light border */
-  border-radius: 5px; /* Rounded corners */
-  outline: none; /* No outline on focus */
-  transition: border-color 0.3s ease; /* Smooth transition */
-}
-
-/* Change border color on focus for a more interactive effect */
-input:focus,
-textarea:focus {
-  border-color: teal; /* Border color on focus */
-}
-
-/* Styling for "Welcome to my blog" heading */
-h1 {
-  font-size: 4em; /* Large heading for emphasis */
-  font-weight: bold; /* Bold text */
-  text-align: center; /* Centered text */
-}
-
-/* Styling for toggle mode button */
+/* Specific styling for the light/dark toggle button */
 #toggle-mode {
-  font-size: 1.5em; /* Larger font size */
+  font-size: 1.2em; /* Font size for the toggle button */
   padding: 10px; /* Padding for comfort */
-  background: #333; /* Dark background */
-  color: white; /* Light text */
-  border: none; /* No border */
-  border-radius: 10px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor */
-  transition: background 0.3s ease; /* Smooth transition */
+  background: #107895; /* Base color */
+  border-radius: 5px; /* Rounded corners */
+  transition: background 0.3s; /* Smooth transition */
 }
 
+/* Hover effect for toggle button */
 #toggle-mode:hover {
-  background: darkteal; /* Hover effect */
+  background: darkviolet; /* Change hover color */
 }
 
-/* Styling for submit button */
+/* Specific styling for the submit button */
 button[type="submit"] {
-  font-size: 1.5em;
-  padding: 12px; /* Slightly more padding */
-  background: black;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  font-size: 1em; /* Adjust font size for the submit button */
+  background: #107895; /* Base color for submit button */
+  border: none; 
+  padding: 15px 30px; 
+  border-radius: 5px;
+  transition: background 0.3s; /* Smooth transition */
 }
 
+/* Hover effect for the submit button */
 button[type="submit"]:hover {
-  background: darkgray; /* Hover effect */
+  background: darkviolet; /* Change hover color */
+}
+
+/* Font adjustments for heading */
+h1 {
+  font-size: 4em; /* Large font size */
+  
+  font-weight: bold; 
+  text-align: center;
+}
+
+/* Font adjustments for paragraph text */
+p {
+  font-size: 2.5em; 
+  text-align: center; 
 }

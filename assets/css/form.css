@@ -1,6 +1,6 @@
 /* Styling for the form */
 form {
-  background: white;
+  background: blueviolet; 
   border: 2px solid teal;
   border-radius: 10px;
   padding: 20px; /* Increases padding inside the form */

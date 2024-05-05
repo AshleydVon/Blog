@@ -3,32 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>My Personal Blog</title>
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Global styles -->
-    <link rel="stylesheet" href="assets/css/form.css"> <!-- Form-specific styles -->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/form.css"> <!-- Form-specific CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    
-<body>
-<!--First section-->
-  <div style="background-image: url('/assets/blogblog.jpeg'); 
-  background-size: cover; height:480px; padding-top:80px;">
-  </div>
-</body>
-
 </head>
 <body class="light-mode"> <!-- Default mode is light -->
     <div class="header">
-        <h1>Welcome to My Blog!</h1>
         <button id="toggle-mode">Toggle Light/Dark Mode</button> <!-- Toggle button for light/dark mode -->
+        <h1>Blooming Rune</h1>
+        <p>Poetry Blog</p>
     </div>
     
-    <p>Share your thoughts and stories below:</p>
+    <!-- Section with background image -->
+    <div style="background-image: url('/assets/blogblog.jpeg'); 
+    background-size: cover; height:480px; padding-top:80px;">
+    </div>
     
-    <!-- Corrected form structure -->
+    <!-- Blog content -->
+    <p>Submit your poetry here:</p>
     <form id="blog-form">
         <div>
-            <label for="username">Your Name:</label>
+            <label for="username">Name:</label>
             <input type="text" id="username" required>
         </div>
         <div>
@@ -36,15 +31,16 @@
             <input type="text" id="blog-title" required>
         </div>
         <div>
-            <label for="blog-content">Blog Content:</label>
+            <label for="blog-content">Blog Entry:</label>
             <textarea id="blog-content" required></textarea>
         </div>
-        <button type="submit">Submit</button> <!-- Correctly placed submit button -->
+        <button type="submit">Submit</button> <!-- Submit button for the form -->
     </form>
 
-    <!-- Google Fonts and JavaScript Files -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- JavaScript Files -->
     <script src="assets/js/form.js"></script> <!-- Handles form submission -->
     <script src="assets/js/logic.js"></script> <!-- Handles light/dark mode toggle -->
 </body>
