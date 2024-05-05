@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="assets/css/styles.css"> <!-- Global styles -->
     <link rel="stylesheet" href="assets/css/form.css"> <!-- Form-specific styles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+<body>
+<!--First section-->
+  <div style="background-image: url('/assets/blogblog.jpeg'); 
+  background-size: cover; height:480px; padding-top:80px;">
+  </div>
+</body>
+
 </head>
 <body class="light-mode"> <!-- Default mode is light -->
     <div class="header">
@@ -15,9 +25,8 @@
     
     <p>Share your thoughts and stories below:</p>
     
-    
+    <!-- Corrected form structure -->
     <form id="blog-form">
-        
         <div>
             <label for="username">Your Name:</label>
             <input type="text" id="username" required>
@@ -29,12 +38,11 @@
         <div>
             <label for="blog-content">Blog Content:</label>
             <textarea id="blog-content" required></textarea>
-        <</div>
-        <button type="submit">Submit</button> <!-- The submit button -->
-    </form>
+        </div>
+        <button type="submit">Submit</button> <!-- Correctly placed submit button -->
     </form>
 
-    <!-- JavaScript Files -->
+    <!-- Google Fonts and JavaScript Files -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
     <script src="assets/js/form.js"></script> <!-- Handles form submission -->

@@ -6,6 +6,32 @@
   font-family: 'Dancing Script', cursive; /* Apply Google script font */
 }
 
+
+/* Background image with additional styling */
+body.light-mode {
+    background-image: url('assets/images/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    color: #333; /* Text color */
+}
+
+/* Dark mode example */
+body.dark-mode {
+    background-image: url('assets/images/dark-background.jpg'); /* Different image for dark mode */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Text color in dark mode */
+}
+
+/* Other styles for larger appearance */
+body {
+    padding: 40px; /* Adds padding around the content */
+    margin: 40px; /* Adds margin for larger appearance */
+}
+
+
 /* Light and dark modes with gradient background */
 body.light-mode {
   background: linear-gradient(to bottom, teal, pink); /* Teal to pink gradient */
