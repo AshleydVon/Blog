@@ -1,0 +1,35 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Light Mode */
+body.light-mode {
+  font-family: 'Dancing Script', cursive; 
+  background: linear-gradient(to bottom, #008080, #90EE90); /* Light gradient */
+  color: #333; /* Dark text */
+}
+
+/* Dark Mode */
+body.dark-mode {
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(to bottom, #333, #555); /* Dark gradient */
+  color: #fff; /* Light text */
+}
+
+/* Button Styles */
+button {
+  background: #008080; 
+  color: white; 
+  border: none; 
+  padding: 15px 30px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #005555; /* Darker teal on hover */
+}

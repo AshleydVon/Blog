@@ -1,0 +1,21 @@
+/* Styling for the form */
+form {
+  background: white;
+  border: 2px solid teal;
+  border-radius: 10px;
+  padding: 20px; /* Increases padding inside the form */
+  margin-top: 40px; /* Adds space at the top */
+  margin-bottom: 40px; /* Adds space at the bottom */
+}
+
+label {
+  font-size: 3em;
+}
+
+input, 
+textarea {
+  padding: 10px;
+  border: 1px solid teal;
+  border-radius: 5px;
+  width: 100%; /* Ensures full width */
+}

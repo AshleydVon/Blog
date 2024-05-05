@@ -1,0 +1,80 @@
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive; /* Apply Google script font */
+}
+
+/* Light and dark modes with gradient background */
+body.light-mode {
+  background: linear-gradient(to bottom, teal, pink); /* Teal to pink gradient */
+  color: #333; /* Dark text for contrast */
+}
+
+body.dark-mode {
+  background: linear-gradient(to bottom, darkslategray, darkmagenta); /* Darker gradient */
+  color: white; /* Light text for contrast */
+}
+
+/* Margin and padding adjustments for a larger appearance */
+body {
+  padding: 40px;
+  margin: 40px;
+}
+
+/* Styling for input fields (text, email, and textarea) */
+input,
+textarea {
+  font-size: 3em; /* Slightly larger font for readability */
+  padding: 10px; /* Padding for user comfort */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* No outline on focus */
+  transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Change border color on focus for a more interactive effect */
+input:focus,
+textarea:focus {
+  border-color: teal; /* Border color on focus */
+}
+
+/* Styling for "Welcome to my blog" heading */
+h1 {
+  font-size: 4em; /* Large heading for emphasis */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Centered text */
+}
+
+/* Styling for toggle mode button */
+#toggle-mode {
+  font-size: 1.5em; /* Larger font size */
+  padding: 10px; /* Padding for comfort */
+  background: #333; /* Dark background */
+  color: white; /* Light text */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background 0.3s ease; /* Smooth transition */
+}
+
+#toggle-mode:hover {
+  background: darkteal; /* Hover effect */
+}
+
+/* Styling for submit button */
+button[type="submit"] {
+  font-size: 1.5em;
+  padding: 12px; /* Slightly more padding */
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: darkgray; /* Hover effect */
+}

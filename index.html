@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Global styles -->
+    <link rel="stylesheet" href="assets/css/form.css"> <!-- Form-specific styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="light-mode"> <!-- Default mode is light -->
+    <div class="header">
+        <h1>Welcome to My Blog!</h1>
+        <button id="toggle-mode">Toggle Light/Dark Mode</button> <!-- Toggle button for light/dark mode -->
+    </div>
+    
+    <p>Share your thoughts and stories below:</p>
+    
+    
+    <form id="blog-form">
+        
+        <div>
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" required>
+        </div>
+        <div>
+            <label for="blog-title">Blog Title:</label>
+            <input type="text" id="blog-title" required>
+        </div>
+        <div>
+            <label for="blog-content">Blog Content:</label>
+            <textarea id="blog-content" required></textarea>
+        <</div>
+        <button type="submit">Submit</button> <!-- The submit button -->
+    </form>
+    </form>
+
+    <!-- JavaScript Files -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="assets/js/form.js"></script> <!-- Handles form submission -->
+    <script src="assets/js/logic.js"></script> <!-- Handles light/dark mode toggle -->
+</body>
+</html>

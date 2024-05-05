@@ -1,0 +1,17 @@
+.blog-post {
+  background: white;
+  border: 2px solid teal;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px; /* Adds space between blog posts */
+}
+
+.blog-post h2 {
+  font-size: 2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for the title */
+}
+
+.blog-post p {
+  font-size: 2em;
+  margin: 15px 0; 
+}
