@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="assets/css/form.css"> <!-- Form-specific CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="light-mode"> <!-- Default mode is light -->
+<body class="light-mode"> 
     <div class="header">
         <button id="toggle-mode">Toggle Light/Dark Mode</button> <!-- Toggle button for light/dark mode -->
         <h1>Blooming Rune</h1>
         <p>Poetry Blog</p>
     </div>
     
-    <!-- Section with background image -->
+    
     <div style="background-image: url('/assets/blogblog.jpeg'); 
     background-size: cover; height:480px; padding-top:80px;">
     </div>
     
-    <!-- Blog content -->
+    
     <p>Submit your poetry here:</p>
     <form id="blog-form">
         <div>
-            <label for="username">Name:</label>
+            <label for="username">Author:</label>
             <input type="text" id="username" required>
         </div>
         <div>
-            <label for="blog-title">Blog Title:</label>
+            <label for="blog-title">Poem Title:</label>
             <input type="text" id="blog-title" required>
         </div>
         <div>
@@ -37,11 +37,15 @@
         <button type="submit">Submit</button> <!-- Submit button for the form -->
     </form>
 
-    <!-- Google Fonts -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- JavaScript Files -->
     <script src="assets/js/form.js"></script> <!-- Handles form submission -->
     <script src="assets/js/logic.js"></script> <!-- Handles light/dark mode toggle -->
+    <footer>
+        <p> Made with 💟 </p>
+    </footer>
+
 </body>
 </html>

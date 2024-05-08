@@ -7,68 +7,47 @@ toggleModeButton.addEventListener('click', function () {
 });
 
 // Form Submission Handling
-const sampleForm = document.querySelector('#sample-form'); // Reference to the form
-
-if (sampleForm) {
-    sampleForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form behavior
-
-        const name = document.querySelector('#name').value.trim(); // Get input values
-        const email = document.querySelector('#email').value.trim();
-
-        if (!name || !email) { // Validate form fields
-            alert("Please fill out all fields."); // Alert if any field is empty
-            return; // Exit if any field is empty
-        }
-
-        // Store data in local storage (for example, you can adapt this as needed)
-        const formData = { name, email };
-        localStorage.setItem('formData', JSON.stringify(formData));
-
-        console.log("Form submitted successfully!"); // Indicate form submission
-
-        // Optionally, redirect to another page or perform other actions
-    });
-} else {
-    console.error("Error."); // Log an error if the form does not exist
-}
-
-// Form Submission Handling
 document.addEventListener('DOMContentLoaded', function () {
-    const blogForm = document.querySelector('#blog-form'); // Correctly reference the form
+    const blogForm = document.querySelector('#blog-form'); // Reference to the blog form
 
     if (blogForm) {
-        blogForm.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent default form behavior
+        let formSubmitted = false; // Flag to track if form has been submitted
 
-            const username = document.querySelector('#username').value.trim(); // Get form values
+        blogForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Check if form has already been submitted
+            if (formSubmitted) {
+                console.log("Form has already been submitted.");
+                return; // Exit function if form has already been submitted
+            }
+
+            // Get form values
+            const username = document.querySelector('#username').value.trim();
             const blogTitle = document.querySelector('#blog-title').value.trim();
             const blogContent = document.querySelector('#blog-content').value.trim();
 
-            if (!username || !blogTitle || !blogContent) { // Validate fields
-                alert("Please fill out all fields."); // If any field is empty
+            // Validate fields
+            if (!username || !blogTitle || !blogContent) {
+                alert("Please fill out all fields.");
                 return; // Prevent submission if validation fails
             }
 
+            // Set flag to indicate form submission
+            formSubmitted = true;
+
+            // Create new blog post object
             const newBlogPost = { username, title: blogTitle, content: blogContent };
 
+            // Add the new blog post to the list
             const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
-            blogPosts.push(newBlogPost); // Add the new post to the list
+            blogPosts.push(newBlogPost);
+            localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
 
-            localStorage.setItem('blogPosts', JSON.stringify(blogPosts)); // Store updated list
-
-            // Redirect to a new page (or handle in another way)
-            window.location.href = 'blog.html'; // Example redirect after form submission
+            // Redirect to blog page after successful submission
+            window.location.href = 'blog.html';
         });
     } else {
-        console.error("Form element not found."); // Log an error if the form is missing
+        console.log("Blog form element not found."); // Log an error if the form is missing
     }
 });
-
-
-
-// To remove all blog posts:
-
-
-    
-

@@ -1,8 +1,6 @@
 const blogForm = document.querySelector('#blog-form'); // Correctly reference the form
 
 // Ensure the event listener is attached and prevents default behavior
-blogForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting in the default way
 
     const username = document.querySelector('#username').value.trim(); // Get input values
     const blogTitle = document.querySelector('#blog-title').value.trim();
