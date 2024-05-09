@@ -1,11 +1,11 @@
-/* Styling for the form */
+
 form {
   background: blueviolet; 
   border: 2px solid teal;
   border-radius: 10px;
-  padding: 20px; /* Increases padding inside the form */
-  margin-top: 40px; /* Adds space at the top */
-  margin-bottom: 40px; /* Adds space at the bottom */
+  padding: 20px; 
+  margin-top: 40px; 
+  margin-bottom: 40px; 
 }
 
 label {
@@ -17,5 +17,5 @@ textarea {
   padding: 10px;
   border: 1px solid teal;
   border-radius: 5px;
-  width: 100%; /* Ensures full width */
+  width: 100%; 
 }

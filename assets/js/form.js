@@ -1,4 +1,4 @@
-const blogForm = document.querySelector('#blog-form'); // Correctly reference the form
+onst blogForm = document.querySelector('#blog-form'); // Correctly reference the form
 
 // Ensure the event listener is attached and prevents default behavior
 

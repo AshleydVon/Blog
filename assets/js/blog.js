@@ -1,4 +1,3 @@
-// Function to load blog posts from localStorage
 function loadBlogPosts() {
     const postList = document.querySelector('#post-list'); // Blog post list reference
     const storedPosts = JSON.parse(localStorage.getItem('blogPosts')) || []; // Retrieve blog posts from localStorage

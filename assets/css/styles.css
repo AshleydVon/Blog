@@ -1,4 +1,4 @@
-/* Basic resets */
+/* styles.css */
 * {
   margin: 0;
   padding: 0;
@@ -8,79 +8,121 @@
 /* Light Mode */
 body.light-mode {
   font-family: 'Dancing Script', cursive; 
-  background: linear-gradient(to top, rgb(212, 124, 237), rgb(167, 164, 234)); /* Gradient for light mode */
-  color: #333; /* Dark text for light mode */
-  min-height: 100vh; /* Ensure gradient covers the full viewport */
+  background: linear-gradient(to top, rgb(212, 124, 237), rgb(167, 164, 234));
+  color: #333; 
+  min-height: 100vh; 
 }
 
 /* Dark Mode */
 body.dark-mode {
   font-family: 'Dancing Script', cursive; 
-  background: linear-gradient(to bottom, #47065d, #1c1c3c); /* Dark gradient */
-  color: #fff; /* Light text for dark mode */
+  background: linear-gradient(to bottom, #47065d, #1c1c3c); 
+  color: #fff; 
 }
 
-/* Label color adjustment for dark mode */
-label {
-  color: inherit; /* Ensures text inherits the correct color from the body mode */
-}
-
-/* Button Styles */
 button {
-  background: blueviolet; 
-  color: white; 
+  background: rgb(138, 43, 226); 
+  color: rgb(224, 20, 224); 
   border: none; 
   padding: 15px 30px; 
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer; 
   transition: background 0.3s;
-  font-size: 1.2em; /* Default font size for buttons */
+  font-size: 5em; 
 }
 
-/* Hover styling for buttons */
+
 button:hover {
-  background: teal; /* Change hover color to teal */
+  background: teal; 
 }
 
-/* Specific styling for the light/dark toggle button */
 #toggle-mode {
-  font-size: 1.2em; /* Font size for the toggle button */
-  padding: 10px; /* Padding for comfort */
-  background: #107895; /* Base color */
-  border-radius: 5px; /* Rounded corners */
-  transition: background 0.3s; /* Smooth transition */
+  font-size: 1.2em;
+  padding: 10px; 
+  background: #40dae5; 
+  border-radius: 5px; 
+  transition: background 0.3s; 
 }
 
-/* Hover effect for toggle button */
 #toggle-mode:hover {
-  background: darkviolet; /* Change hover color */
+  background: darkviolet; 
 }
 
-/* Specific styling for the submit button */
 button[type="submit"] {
-  font-size: 1em; /* Adjust font size for the submit button */
-  background: #107895; /* Base color for submit button */
+  font-size: 1em; 
+  background: #40dae5; 
   border: none; 
   padding: 15px 30px; 
   border-radius: 5px;
-  transition: background 0.3s; /* Smooth transition */
+  transition: background 0.3s; 
 }
 
-/* Hover effect for the submit button */
 button[type="submit"]:hover {
-  background: darkviolet; /* Change hover color */
+  background: darkviolet; 
 }
 
-/* Font adjustments for heading */
 h1 {
-  font-size: 4em; /* Large font size */
-  
+  font-size: 4em; 
   font-weight: bold; 
   text-align: center;
 }
 
-/* Font adjustments for paragraph text */
 p {
   font-size: 2.5em; 
   text-align: center; 
+}
+
+/* form.css */
+form {
+  background: blueviolet; 
+  border: 2px solid teal;
+  border-radius: 10px;
+  padding: 20px; 
+  margin-top: 40px; 
+  margin-bottom: 40px; 
+}
+
+label {
+  font-size: 3em;
+}
+
+input, 
+textarea {
+  padding: 10px;
+  border: 1px solid teal;
+  border-radius: 5px;
+  width: 100%; 
+}
+
+/* blog.css */
+.blog-post {
+  background: purple;
+  border: 2px solid rgb(28, 151, 151);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px; /* Adds space between blog posts */
+}
+
+.blog-post h2 {
+  font-size: 2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for the title */
+}
+
+.blog-post p {
+  font-size: 2em;
+  margin: 15px 0; 
+}
+/* styles.css */
+
+/* Back Button */
+#back-to-form {
+  font-size: 1.2em;
+  padding: 10px; 
+  background: #40dae5; 
+  border-radius: 5px; 
+  transition: background 0.3s; 
+}
+
+#back-to-form:hover {
+  background: darkviolet; 
 }
