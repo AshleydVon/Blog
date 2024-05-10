@@ -1,6 +1,6 @@
 # Blog
 
-This is a personal blog application where users can create and view mu first blog. The blog includes a light/dark mode toggle, local storage for storing blog posts, and a "Back" button to navigate between sections.
+This is a personal blog application where users can create and view mu first blog, which is a poetry blog. The blog includes a light/dark mode toggle, local storage for storing blog posts, and a "Back" button to navigate between sections, as well as a few submissions already posted.
 
 ## Features
 - Create new blog posts with a form.
@@ -23,5 +23,5 @@ This is a personal blog application where users can create and view mu first blo
 5. Click "Back" to return to the form section to create more blog posts.
 
 ## Links
-- [Deployed Application](link-to-deployed-app)
+- [Deployed Application](http://127.0.0.1:5500/index.html)
 - [GitHub Repository](link-to-github-repo)

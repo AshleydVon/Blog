@@ -1,8 +1,8 @@
 function loadBlogPosts() {
-    const postList = document.querySelector('#post-list'); // Blog post list reference
-    const storedPosts = JSON.parse(localStorage.getItem('blogPosts')) || []; // Retrieve blog posts from localStorage
+    const postList = document.querySelector('#post-list'); 
+    const storedPosts = JSON.parse(localStorage.getItem('blogPosts')) || []; 
 
-    postList.innerHTML = ''; // Clear any existing posts
+    postList.innerHTML = ''; 
 
     storedPosts.forEach((post) => {
         const postDiv = document.createElement('div');
@@ -12,7 +12,7 @@ function loadBlogPosts() {
             <p>${post.content}</p>
             <p class="author">By: ${post.username}</p>
         `;
-        postList.appendChild(postDiv); // Add to the post list
+        postList.appendChild(postDiv); 
     });
 }
 
@@ -21,5 +21,5 @@ window.onload = loadBlogPosts;
 
 // Back button logic
 document.querySelector('#back-to-form').addEventListener('click', function () {
-    window.history.back(); // Use history.back() to navigate back
+    window.history.back(); 
 });
