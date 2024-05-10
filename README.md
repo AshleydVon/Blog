@@ -24,4 +24,11 @@ This is a personal blog application where users can create and view mu first blo
 
 ## Links
 - [Deployed Application](http://127.0.0.1:5500/index.html)
-- [GitHub Repository](link-to-github-repo)
+- [GitHub Repository](https://github.com/AshleydVon/Blog)
+- [Screeshot of blog](https://github.com/AshleydVon/Blog/blob/main/Blog.jpg)
+- [Screen Shot of blog in dark mode] 
+(https://github.com/AshleydVon/Blog/blob/main/blogdarkmode.jpeg)
+
+[Screenshot of 2nd blog pg](https://github.com/AshleydVon/Blog/blob/main/blogpg2.jpeg)
+
+[Screen shot of 2nd blog pg dark mode](https://github.com/AshleydVon/Blog/blob/main/blogpg2darkmode.jpeg)
